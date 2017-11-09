@@ -134,7 +134,7 @@
 
 	// Option THREE sort by product
 
-	var _objectByproduct = {
+	var _objectByProduct = {
 		"Agouninė" :
 		[
 			{
@@ -154,7 +154,7 @@
 
 	console.log(_arrayOfObjects);
 	console.log(_objectByDate);
-	console.log(_objectByproduct);
+	console.log(_objectByProduct);
 
 	//Option Four 
 
@@ -176,12 +176,14 @@
 		},
 	};
 
-	//Option SIX
+	console.log(_optimisedByDate);
+	console.log(_optimisedByProduct);
 
-	var _products =
-	{
-		"p-1": "Agouninė"
-		"p-2": "Varškės"
+	//Option SIX//
+
+	var _products = {
+		"p-1":"Agouninė",
+		"p-2":"Varškės",
 	};
 
 	var _ByProduct = {
@@ -196,6 +198,21 @@
 			"2017-11-10": [5, 20, 19, 4, 2],
 		},
 	};
+	var _ByDate = {
+		"2017-11-09" :
+		{
+			"p-1": [5, 20, 19, 4, 2],
+			"p-2": [5, 20, 19, 4, 2],
+		},
+		"2017-11-10" :
+		{
+			"p-1": [5, 20, 19, 4, 2],
+			"p-2": [5, 20, 19, 4, 2],
+		},
+	};
+
+	console.log(_products);
+	console.log(_ByProduct);
 </script>
 </body>
 </html>
