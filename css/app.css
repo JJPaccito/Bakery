@@ -1,5 +1,8 @@
 @import url(https://fonts.google.com/specimen/Open+Sans)
 
-body	{
+.body	{
 	font-family: 'Open Sans'
+}
+.table {
+	border: 2px black;
 }

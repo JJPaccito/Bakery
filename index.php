@@ -41,16 +41,16 @@
 				</tr>
 				<tr>
 					<td>Varškės</td>
-					<td>20</td>
-					<td>20</td>
-					<td>30</td>
+					<td>3</td>
+					<td>28</td>
+					<td>25</td>
 					<td>2</td>
-					<td>8</td>
-					<td>20</td>
-					<td>20</td>
-					<td>30</td>
+					<td>4</td>
+					<td>3</td>
+					<td>28</td>
+					<td>25</td>
 					<td>2</td>
-					<td>8</td>
+					<td>4</td>
 				</tr>
 				<tr>
 					<td>Duona balta</td>
@@ -88,6 +88,114 @@
 				</tr>
 			</tbody>
 	</table>
+<script type="text/javascript">
+
+	//Oprion ONE;
+
+	var _arrayOfObjects = [
+		{
+			"date":"2017-11-09",
+			"product":"Agouninė",
+			"data": [5, 20, 19, 4, 2]
+		},
+		{
+			"date":"2017-11-10",
+			"product":"Varškės",
+			"data": [3, 28, 28, 2, 4]
+		},
+	];
+
+	// Option TWO sort by date
+
+	var _objectByDate = {
+		"2017-11-09" :
+		[
+			{
+				"product":"Agouninė",
+				"data": [5, 20, 19, 4, 2]
+			},
+			{
+				"product":"Varškės",
+				"data": [3, 28, 28, 2, 4]
+			},
+		],
+		"2017-11-10" :
+		[
+			{
+				"product":"Agouninė",
+				"data": [5, 20, 19, 4, 2]
+			},
+			{
+				"product":"Varškės",
+				"data": [3, 28, 28, 2, 4]
+			},
+		],
+	};
+
+	// Option THREE sort by product
+
+	var _objectByproduct = {
+		"Agouninė" :
+		[
+			{
+				"date":"2017-11-09",
+				"data": [5, 20, 19, 4, 2]
+			},
+		],
+		"Varškės" :
+		[
+			{
+				"date":"2017-11-09",
+				"data": [5, 20, 19, 4, 2]
+			},
+		],
+	};
+
+
+	console.log(_arrayOfObjects);
+	console.log(_objectByDate);
+	console.log(_objectByproduct);
+
+	//Option Four 
+
+	var _optimisedByDate = {
+		"2017-11-09" :
+		{
+			"Varškės": [5, 20, 19, 4, 2],
+			"Agouninė":[5, 20, 19, 4, 2],
+		},
+	};
+
+	//Option Five
+
+	var _optimisedByProduct = {
+		"Agouninė" :
+		{
+			"2017-11-09": [5, 20, 19, 4, 2],
+			"2017-11-10": [5, 20, 19, 4, 2],
+		},
+	};
+
+	//Option SIX
+
+	var _products =
+	{
+		"p-1": "Agouninė"
+		"p-2": "Varškės"
+	};
+
+	var _ByProduct = {
+		"p-1" :
+		{
+			"2017-11-09": [5, 20, 19, 4, 2],
+			"2017-11-10": [5, 20, 19, 4, 2],
+		},
+		"p-2" :
+		{
+			"2017-11-09": [5, 20, 19, 4, 2],
+			"2017-11-10": [5, 20, 19, 4, 2],
+		},
+	};
 </script>
 </body>
 </html>
